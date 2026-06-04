@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>What Should I Post Today?</title>
+</head>
+<body>
+
+<h1>What Should I Post Today?</h1>
+
+<button onclick="generateIdea()">
+Generate Idea
+</button>
+
+<p id="idea"></p>
+
+<script>
+const ideas = [
+"Show your daily routine.",
+"Rate your favorite snacks.",
+"Tell an embarrassing story.",
+"Show your gaming setup.",
+"Share your biggest goal.",
+"Reveal a hidden talent.",
+"Try a trending challenge.",
+"Make a before vs after video.",
+"Share your favorite app.",
+"Give 3 useful tips."
+];
+
+function generateIdea() {
+const random = ideas[Math.floor(Math.random() * ideas.length)];
+document.getElementById("idea").innerText = random;
+}
+</script>
+
+</body>
+</html>
